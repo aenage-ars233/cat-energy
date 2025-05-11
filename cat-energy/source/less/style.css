@@ -1,6 +1,67 @@
-body {
-  background-color: tomato;
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
-body {
-  font-size: 40px;
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+.page__body {
+  background-color: #ffffff;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  clip: rect(0, 0, 0, 0);
+}
+.page-header__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.page-header__menu-link {
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.promo {
+  background-color: #68b738;
+  color: #ffffff;
+  text-align: center;
+}
+.promo__heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+.promo__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.promo__button {
+  background-color: #68b738;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }

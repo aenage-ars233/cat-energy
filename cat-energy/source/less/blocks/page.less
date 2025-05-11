@@ -1,7 +1,17 @@
-body {
-  background-color: tomato;
+.page {}
+
+.page__body {
+  background-color: @basic_white;
+  color: @special_dark_grey;
+  font-family: "Oswald", sans-serif;
 }
 
-p {
-  margin-top: 10px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  clip: rect(0, 0, 0, 0);
 }
+
