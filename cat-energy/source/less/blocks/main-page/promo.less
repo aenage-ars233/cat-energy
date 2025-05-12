@@ -1,16 +1,27 @@
 .promo {
-  background-color: @basic_green;
+  background-image: url('../img/promo-background.png');
+  background-position: 0 0;
+  background-size: 320px 302px;
+  background-repeat: repeat;
   color: @basic_white;
   text-align: center;
 }
 
+.promo__block {
+  padding-top: 27px;
+  background-color: fade(@basic_green, 85%);
+}
+
 .promo__heading {
-  font-weight: 400;
+  font-family: "Oswald";
+  font-weight: 300;
   font-size: 36px;
   line-height: 36px;
 }
 
 .promo__text {
+  font-family: "Oswald";
+  letter-spacing: 1px;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -22,7 +33,9 @@
   color: @basic_white;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Oswald";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  font-style: normal;
 }

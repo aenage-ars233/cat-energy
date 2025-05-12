@@ -15,7 +15,7 @@
 .page__body {
   background-color: #ffffff;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
 }
 .visually-hidden {
   position: absolute;
@@ -33,24 +33,35 @@
 }
 .page-header__menu-link {
   color: #000000;
-  font-family: "Oswald";
   text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500;
+  font-family: "Oswald";
+  font-weight: 900;
+  font-style: normal;
 }
 .promo {
-  background-color: #68b738;
+  background-image: url('../img/promo-background.png');
+  background-position: 0 0;
+  background-size: 320px 302px;
+  background-repeat: repeat;
   color: #ffffff;
   text-align: center;
 }
+.promo__block {
+  padding-top: 27px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
 .promo__heading {
-  font-weight: 400;
+  font-family: "Oswald";
+  font-weight: 300;
   font-size: 36px;
   line-height: 36px;
 }
 .promo__text {
+  font-family: "Oswald";
+  letter-spacing: 1px;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -61,7 +72,48 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Oswald";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  font-style: normal;
+}
+.catalog-sections__item {
+  background-color: #f2f2f2;
+}
+.catalog-sections__heading {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 37px;
+}
+.catalog-sections__text {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+}
+.catalog-sections__link {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+}
+.process__heading {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+}
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.process__item {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
 }
