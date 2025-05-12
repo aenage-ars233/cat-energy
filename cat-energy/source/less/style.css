@@ -117,3 +117,71 @@
   font-size: 14px;
   line-height: 18px;
 }
+.example {
+  background-color: #eaeaea;
+}
+.example__title {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+}
+.example__text {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+}
+.example__list {
+  text-align: center;
+}
+.example__list .example__title {
+  color: #444444;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+.example__list .example__description {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+}
+.example__spending {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+}
+.switcher__button {
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+}
+.contacts__heading {
+  color: #111111;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+}
+.contacts__address {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 20px;
+}
+.page-footer {
+  background-color: #f2f2f2;
+}
+.page-footer__developer {
+  color: #444444;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 16px;
+}
