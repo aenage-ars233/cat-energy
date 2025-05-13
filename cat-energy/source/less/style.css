@@ -277,3 +277,62 @@
 .offer__block {
   background-color: rgba(104, 183, 56, 0.85);
 }
+.page-main__subheading {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 18px;
+}
+.field-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.field-group__heading {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 26px;
+}
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.field__lead {
+  color: #444444;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+}
+.field__input::placeholder {
+  color: #444444;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+}
+.control__lead {
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+}
+.form__button {
+  background-color: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__aditional {
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+}
