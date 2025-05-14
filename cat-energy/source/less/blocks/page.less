@@ -1,6 +1,16 @@
-.page {}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+}
 
 .page__body {
+  margin: 0;
+  padding: 0;
   background-color: @basic_white;
   color: @special_dark_grey;
   font-family: sans-serif;

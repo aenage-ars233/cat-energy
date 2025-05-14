@@ -1,9 +1,120 @@
+.page-header {
+  padding: 10px 0 17px 0;
+
+  @media (min-width: @tablet) {
+    padding: 24px 30px 62px 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 53px 110px 0 110px;
+  }
+}
+
+.page-header__nav {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+
+  @media (min-width: @tablet) {
+    margin-right: 94px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 540px;
+  }
+}
+
+.logo__image {
+  margin-right: 56px;
+
+  @media (min-width: @tablet) {
+    margin-right: 12px;
+  }
+}
+
+.page-header__toggler {
+  width: 24px;
+  height: 16px;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
 .page-header__menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  display: none;
   .list-reset();
   text-align: center;
+  background-color: @basic_white;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: @tablet) {
+    position: static;
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop) {
+    width: 488px;
+  }
+}
+
+.page-header__menu-item {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet) {
+    border: none;
+  }
+
+  &:first-child {
+    @media (min-width: @tablet) {
+      margin-right: 34px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-right: 37px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet) {
+      margin-right: 36px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-right: 36px;
+    }
+  }
 }
 
 .page-header__menu-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  display: block;
   color: @basic_black;
   text-transform: uppercase;
   text-decoration: none;
@@ -12,4 +123,16 @@
   font-family: "Oswald";
   font-weight: 900;
   font-style: normal;
+
+  @media (min-width: @tablet) {
+    display: inline;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

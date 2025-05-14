@@ -1,0 +1,6 @@
+let menuTogglerButton = document.querySelector('.page-header__toggler');
+let menu = document.querySelector('.page-header__menu');
+
+menuTogglerButton.onclick = function() {
+  menu.classList.toggle('page-header__menu--open');
+}
