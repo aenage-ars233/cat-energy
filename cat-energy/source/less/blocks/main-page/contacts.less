@@ -1,13 +1,74 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1440px;
+    padding: 95px 765px 107px 110px;
+  }
+}
+
+.contacts__content {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px;
+
+  @media (min-width: @tablet) {
+    padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 565px;
+    padding: 56px 80px;
+    background-color: @basic_white;
+  }
+}
+
 .contacts__heading {
+  margin: 0;
+  margin-right: 8px;
   color: @special_black;
   text-transform: uppercase;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 172px;
+    margin-right: 296px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 163px;
+    margin-right: 87px;
+  }
 }
 
 .contacts__address {
+  margin: 0;
   font-family: Arial;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }

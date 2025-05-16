@@ -1,48 +1,200 @@
 .example {
+  width: 100%;
+  padding: 25px 20px 40px 20px;
   background-color: @normal_grey;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    padding-bottom: 56px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: @desktop) {
+    position: relative;
+    padding: 70px 110px 65px 110px;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+  }
 }
 
-.example__title {
+.example__content {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet) {
+    background-color: @basic_white;
+    padding: 43px 30px 250px 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    background-color: @normal_grey;
+    padding: 0;
+    padding-bottom: 20px;
+    margin-right: 193px;
+  }
+}
+
+.example__heading {
+  margin: 0;
+  margin-bottom: 40px;
   color: @basic_black;
   font-family: "Oswald";
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    position: absolute;
+    top: -130px;
+    margin: 0;
+  }
 }
 
 .example__text {
+  margin-bottom: 20px;
   font-family: Arial;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 0;
+    margin-bottom: 69px;
+  }
+}
+
+.example__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    width: 366px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  padding-top: 14px;
 
-  .example__title {
-    color: @special_dark_grey;
-    font-family: Arial;
-    font-size: 12px;
-    line-height: 12px;
+  @media (min-width: @tablet) {
+    width: 162px;
   }
+}
 
-  .example__description {
-    color: @basic_black;
-    text-transform: uppercase;
-    font-family: "Oswald";
-    font-size: 24px;
-    line-height: 24px;
+.example__title {
+  order: 2;
+  color: @special_dark_grey;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: @tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__description {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 7px;
+  color: @basic_black;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
 .example__spending {
+  width: 190px;
+  margin: 0 auto;
   color: @basic_black;
   text-transform: uppercase;
   font-family: "Oswald";
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 174px;
+    margin: 0;
+    margin-left: auto;
+    margin-top: -70px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 330px;
+    margin: 0;
+    text-align: left;
+    white-space: pre;
+  }
+}
+
+.example__slider {
+  @media (min-width: @tablet) {
+    width: 591px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
+}
+
+.fat-cat {
+  display: block;
+  width: 280px;
+  height: 232px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.thin-cat {
+  display: none;
+}
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
 }
 
 .switcher__button {
+  border: none;
   background-color: transparent;
   color: @basic_black;
   text-transform: uppercase;
@@ -50,4 +202,44 @@
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+  }
+}
+
+.range {
+  position: relative;
+  width: 85px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @basic_white;
+
+  @media (min-width: @tablet) {
+    width: 426px;
+    padding: 0;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+}
+
+.range__bar {
+  position: absolute;
+  left: 6px;
+  right: 43px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @basic_green;
+
+  @media (min-width: @tablet) {
+    top: -15px;
+    left: 203px;
+    right: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: @basic_white;
+  }
 }
