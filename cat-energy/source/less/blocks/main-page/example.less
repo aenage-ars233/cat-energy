@@ -1,15 +1,18 @@
 .example {
-  width: 100%;
+  width: 320px;
   padding: 25px 20px 40px 20px;
+  margin: 0 auto;
   background-color: @normal_grey;
 
   @media (min-width: @tablet) {
+    width: 768px;
     padding: 0;
     padding-bottom: 56px;
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop) {
+    width: 1440px;
     position: relative;
     padding: 70px 110px 65px 110px;
     display: flex;
@@ -76,9 +79,8 @@
 
 .example__container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 320px;
+  width: 280px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet) {
@@ -100,6 +102,10 @@
   padding: 0;
   text-align: center;
   padding-top: 14px;
+
+  &:first-child {
+    margin-right: 10px;
+  }
 
   @media (min-width: @tablet) {
     width: 162px;

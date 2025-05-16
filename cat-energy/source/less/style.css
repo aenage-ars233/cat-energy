@@ -518,12 +518,14 @@
   }
 }
 .example {
-  width: 100%;
+  width: 320px;
   padding: 25px 20px 40px 20px;
+  margin: 0 auto;
   background-color: #eaeaea;
 }
 @media (min-width: 768px) {
   .example {
+    width: 768px;
     padding: 0;
     padding-bottom: 56px;
     border-top: 1px solid #e6e6e6;
@@ -531,6 +533,7 @@
 }
 @media (min-width: 1440px) {
   .example {
+    width: 1440px;
     position: relative;
     padding: 70px 110px 65px 110px;
     display: flex;
@@ -598,10 +601,9 @@
   }
 }
 .example__container {
+  width: 300px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 320px;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -624,6 +626,9 @@
   padding: 0;
   text-align: center;
   padding-top: 14px;
+}
+.example__list:first-child {
+  margin-right: 30px;
 }
 @media (min-width: 768px) {
   .example__list {
