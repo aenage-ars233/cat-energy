@@ -1,43 +1,231 @@
+.catalog-list {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet) {
+    width: 710px;
+    margin-bottom: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+    margin-bottom: 76px;
+    gap: 63px 80px;
+  }
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  padding: 19px 20px 25px 20px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    margin: 0;
+    padding: 0 36px 39px 36px;
+    background-color: @basic_grey;
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+    padding: 0 35.5px 40px 40.5px;
+  }
+
+  &:last-child {
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .card__link {
+  display: block;
+  width: 87px;
+  margin-left: 140px;
+  margin-bottom: 18px;
   color: @special_black_2;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    width: 174px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 145px;
+    line-height: 21px;
+  }
+}
+
+.card__heading {
+  margin: 0;
+}
+
+.card__img {
+  position: absolute;
+  top: 33px;
+  left: 36px;
+
+  @media (min-width: @tablet) {
+    position: static;
+    order: -1;
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 46px;
+  }
 }
 
 .card__list {
+  width: 142px;
+  margin-left: 140px;
+  margin-bottom: 22px;
+  padding: 0;
   color: @special_dark_grey;
   font-family: Arial;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet) {
+    width: 247px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 166px;
+  }
+}
+
+.card__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+
+  @media (min-width: @tablet) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+}
+
+.card__definition {
+  margin: 0;
+  padding: 0;
 }
 
 .card__button {
+  display: block;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: @basic_green;
   color: @basic_white;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 168px;
+  }
+}
+
+
+
+
+.show-more {
+  @media (min-width: @tablet) {
+    width: 324px;
+    padding: 52px 37px 38px 38px;
+    border: 2px solid @basic_grey;
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+    padding: 51px 39px 41px 39px;
+  }
 }
 
 .show-more__heading {
+  margin: 0 auto;
+  margin-bottom: 8px;
   color: @special_black;
   text-transform: uppercase;
+  text-align: center;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 135px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 134px;
+  }
 }
 
 .show-more__text {
+  margin: 0 auto;
+  margin-bottom: 21px;
+  text-align: center;
   font-family: Arial;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 87px;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .show-more__button {
+  display: block;
+  width: 279px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: @basic_grey;
   color: @special_dark_grey;
   text-transform: uppercase;
@@ -46,4 +234,12 @@
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    width: 249px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 169px;
+  }
 }

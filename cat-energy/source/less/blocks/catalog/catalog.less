@@ -1,6 +1,32 @@
+.catalog-main {
+  padding: 27px 20px 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 31px 0 31px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0px 110px 0 110px;
+  }
+}
+
 .page-main__heading {
+  margin: 0 auto;
+  margin-bottom: 41px;
   color: @basic_black;
   font-family: "Oswald";
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1440px;
+    margin-bottom: 84px;
+    padding-left: 100px;
+  }
 }

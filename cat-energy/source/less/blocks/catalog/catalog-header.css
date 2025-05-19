@@ -1,0 +1,7 @@
+.catalog-header {
+  outline: 1px solid red;
+  padding: 11px 20px 17px 20px;
+}
+.catalog-header__nav {
+  outline: 1px solid green;
+}
