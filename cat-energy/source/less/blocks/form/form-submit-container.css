@@ -1,0 +1,11 @@
+.form__submit-container {
+  outline: 1px solid red;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+.form__submit {
+  display: block;
+  width: 280px;
+  text-align: center;
+}
