@@ -1,9 +1,15 @@
 .user-data {
+  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
   border-top: 2px solid @basic_green;
   margin-bottom: 23px;
+
+  @media (min-width: @tablet) {
+    width: 708px;
+    margin-bottom: 65px;
+  }
 }
 
 .user-data__heading {
@@ -13,15 +19,33 @@
   font-family: "Oswald";
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet) {
+    width: 590px;
+    margin-left: -60px;
+    margin-bottom: 76px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .user-data__label {
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet) {
+    margin-left: 40px;
+    margin-right: 35px;
+  }
 }
 
 .email-label {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .user-data__lead {
@@ -30,6 +54,11 @@
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .user-data__field {
@@ -46,5 +75,16 @@
     font-family: "Oswald";
     font-size: 16px;
     line-height: 18px;
+
+    @media (min-width: @tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

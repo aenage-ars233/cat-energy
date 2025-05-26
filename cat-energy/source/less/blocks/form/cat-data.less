@@ -1,9 +1,16 @@
 .cat-data {
+  outline: 1px solid blue;
   width: 280px;
   margin: 0;
   padding: 0;
   border: none;
   margin-bottom: 27px;
+
+  @media (min-width: @tablet) {
+    width: 630px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
 }
 
 .cat-data__list {
@@ -14,6 +21,10 @@
 
   &:not(:last-child) {
     margin-bottom: 13px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -27,6 +38,11 @@
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .cat-data__field {
@@ -43,5 +59,16 @@
     font-family: "Oswald";
     font-size: 16px;
     line-height: 18px;
+
+    @media (min-width: @tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    padding: 10px 18px 10px 18px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

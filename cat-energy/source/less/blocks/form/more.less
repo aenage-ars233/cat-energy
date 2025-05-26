@@ -1,9 +1,15 @@
 .more {
+  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
   border-top: 2px solid @basic_green;
   margin-bottom: 34px;
+
+  @media (min-width: @tablet) {
+    width: 708px;
+    margin-bottom: 54px;
+  }
 }
 
 .more__heading {
@@ -13,16 +19,41 @@
   font-family: "Oswald";
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet) {
+    width: 285px;
+    margin-left: -212px;
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .more__list {
+  outline: 1px solid violet;
   .list-reset();
+
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    width: 565px;
+    margin-left: 40px;
+  }
 }
 
 .more__item {
-
+  @media (min-width: @tablet) {
+    width: 221px;
+  }
   &:not(:last-child) {
     margin-bottom: 12px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -31,4 +62,9 @@
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,9 +1,15 @@
 .comment {
+  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
   border-top: 2px solid @basic_green;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    width: 708px;
+    margin-bottom: 65px;
+  }
 }
 
 .comment__heading {
@@ -13,6 +19,15 @@
   font-family: "Oswald";
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet) {
+    width: 260px;
+    margin-left: -225px;
+    margin-bottom: 76px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__field {
@@ -20,15 +35,32 @@
   border: 1px solid #e7e7e7;
   padding-top: 9px;
   padding-left: 15px;
+  padding-right: 15px;
   color: @special_dark_grey;
   font-family: "Oswald";
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet) {
+    display: block;
+    width: 631px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::placeholder {
     color: @special_dark_grey;
     font-family: "Oswald";
     font-size: 16px;
     line-height: 18px;
+
+    @media (min-width: @tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

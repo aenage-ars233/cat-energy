@@ -1,4 +1,5 @@
 .form {
+  outline: 1px solid red;
   width: 280px;
   margin: 0 auto;
 }
