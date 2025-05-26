@@ -1,5 +1,4 @@
 .user-data {
-  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
@@ -9,6 +8,13 @@
   @media (min-width: @tablet) {
     width: 708px;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    grid-column: 1/-1;
+    width: 1220px;
+    margin-bottom: 69px;
   }
 }
 
@@ -28,6 +34,11 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop) {
+    width: 522px;
+    margin-left: -352px;
+  }
 }
 
 .user-data__label {
@@ -38,6 +49,11 @@
     margin-left: 40px;
     margin-right: 35px;
   }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    width: 570px;
+  }
 }
 
 .email-label {
@@ -45,6 +61,11 @@
 
   @media (min-width: @tablet) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+    margin-right: 78px;
   }
 }
 
@@ -58,6 +79,10 @@
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 20px;
   }
 }
 

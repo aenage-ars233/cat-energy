@@ -1,5 +1,4 @@
 .comment {
-  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
@@ -9,6 +8,12 @@
   @media (min-width: @tablet) {
     width: 708px;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column: 1/-1;
+    width: 1220px;
+    margin-bottom: 67px;
   }
 }
 
@@ -27,6 +32,11 @@
     text-align: center;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: -520px;
+
   }
 }
 
@@ -50,6 +60,11 @@
     padding-right: 19px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+    margin: 0;
   }
 
   &::placeholder {

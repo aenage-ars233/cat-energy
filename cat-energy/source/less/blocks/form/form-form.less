@@ -1,10 +1,21 @@
 .form {
-  outline: 1px solid red;
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: @tablet) {
     width: 708px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+  }
+}
+
+.form__body {
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    column-gap: 80px;
   }
 }
 

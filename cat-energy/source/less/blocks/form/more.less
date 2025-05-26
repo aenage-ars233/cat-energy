@@ -1,5 +1,4 @@
 .more {
-  outline: 1px solid blue;
   margin: 0;
   padding: 0;
   border: none;
@@ -9,6 +8,12 @@
   @media (min-width: @tablet) {
     width: 708px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column: 1/-1;
+    width: 1220px;
+    margin-bottom: 61px;
   }
 }
 
@@ -28,10 +33,13 @@
     line-height: 36px;
     text-align: center;
   }
+
+  @media (min-width: @desktop) {
+    margin-left: -500px;
+  }
 }
 
 .more__list {
-  outline: 1px solid violet;
   .list-reset();
 
   @media (min-width: @tablet) {
@@ -41,6 +49,11 @@
     row-gap: 32px;
     width: 565px;
     margin-left: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
+    margin: 0;
   }
 }
 
