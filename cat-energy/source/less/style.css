@@ -548,6 +548,23 @@
     line-height: 20px;
   }
 }
+.catalog-sections__link:hover .catalog-sections__link-aerrow {
+  clip-path: inset(0 0 0 0);
+}
+.catalog-sections__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.catalog-sections__link:active .catalog-sections__link-aerrow :is(line, path) {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.catalog-sections__link-text {
+  margin-right: 17px;
+}
+.catalog-sections__link-aerrow {
+  position: relative;
+  bottom: 3px;
+  clip-path: inset(0 0 0 6px);
+}
 .process {
   width: 279px;
   margin: 0 auto;
@@ -654,6 +671,38 @@
     line-height: 24px;
   }
 }
+.process__item--leaf {
+  background: url("../img/leaf.svg") no-repeat 0 0/60px 60px, none;
+}
+@media (min-width: 768px) {
+  .process__item--leaf {
+    background: url("../img/leaf.svg") no-repeat 0 40px/80px 80px, url("../img/1.svg") no-repeat 98px 0/112px 280px;
+  }
+}
+.process__item--powder {
+  background: url("../img/powder.svg") no-repeat 0 0/60px 60px, none;
+}
+@media (min-width: 768px) {
+  .process__item--powder {
+    background: url("../img/powder.svg") no-repeat 0 40px/80px 80px, url("../img/2.svg") no-repeat 118px 10px/112px 280px;
+  }
+}
+.process__item--neal {
+  background: url("../img/weight.svg") no-repeat 0 0/60px 60px, none;
+}
+@media (min-width: 768px) {
+  .process__item--neal {
+    background: url("../img/weight.svg") no-repeat 0 40px/80px 80px, url("../img/3.svg") no-repeat 123px 10px/112px 280px;
+  }
+}
+.process__item--weight {
+  background: url("../img/neal.svg") no-repeat 0 0/60px 60px, none;
+}
+@media (min-width: 768px) {
+  .process__item--weight {
+    background: url("../img/neal.svg") no-repeat 0 40px/80px 80px, url("../img/4.svg") no-repeat 125px 14px/112px 280px;
+  }
+}
 .example {
   width: 320px;
   padding: 25px 20px 40px 20px;
@@ -755,6 +804,7 @@
   }
 }
 .example__list {
+  border: 1px solid #cdcdcd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -763,9 +813,10 @@
   padding: 0;
   text-align: center;
   padding-top: 14px;
+  border-radius: 3px;
 }
 .example__list:first-child {
-  margin-right: 10px;
+  margin-right: 42px;
 }
 @media (min-width: 768px) {
   .example__list {
@@ -797,7 +848,9 @@
 }
 @media (min-width: 768px) {
   .example__description {
-    margin-bottom: 11px;
+    position: relative;
+    top: 5px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
   }
@@ -906,6 +959,23 @@
     height: 34px;
     border-radius: 50%;
     background-color: #ffffff;
+  }
+  .range__bar:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+  .range__bar:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    outline: 1px solid #68b738;
+  }
+  .range__bar::before {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
   }
 }
 .contacts {
@@ -1049,13 +1119,16 @@
     margin-right: 387px;
   }
 }
-.social__item {
-  outline: 1px solid green;
-}
 .social__item:first-child {
   width: 23px;
   height: 16px;
   margin-right: 36px;
+}
+.social__item:first-child:hover path {
+  fill: #68b738;
+}
+.social__item:first-child:active path {
+  fill: rgba(104, 183, 56, 0.3);
 }
 @media (min-width: 768px) {
   .social__item:first-child {
@@ -1069,6 +1142,12 @@
   height: 16px;
   margin-right: 33px;
 }
+.social__item:nth-child(2):hover path {
+  fill: #68b738;
+}
+.social__item:nth-child(2):active path {
+  fill: rgba(104, 183, 56, 0.3);
+}
 @media (min-width: 768px) {
   .social__item:nth-child(2) {
     width: 23px;
@@ -1077,13 +1156,37 @@
   }
 }
 .social__item:nth-child(3) {
-  width: 22px;
-  height: 22px;
+  width: 11px;
+  height: 18px;
+}
+.social__item:nth-child(3):hover path {
+  stroke: #68b738;
+}
+.social__item:nth-child(3):active path {
+  stroke: rgba(104, 183, 56, 0.3);
 }
 @media (min-width: 768px) {
   .social__item:nth-child(3) {
     width: 28px;
     height: 33px;
+  }
+}
+@media (min-width: 768px) {
+  .vk {
+    width: 30px;
+    height: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .instagram {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (min-width: 768px) {
+  .facebook {
+    width: 17.83px;
+    height: 31.97px;
   }
 }
 .page-footer__developer {
@@ -1096,6 +1199,12 @@
   font-family: Arial;
   font-size: 16px;
   line-height: 16px;
+}
+.page-footer__developer:hover {
+  color: #68b738;
+}
+.page-footer__developer:active {
+  color: rgba(104, 183, 56, 0.3);
 }
 @media (min-width: 768px) {
   .page-footer__developer {

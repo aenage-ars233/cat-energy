@@ -98,4 +98,37 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  &--leaf {
+    background: url("../img/leaf.svg") no-repeat 0 0/60px 60px, none;
+
+    @media (min-width: @tablet) {
+      background: url("../img/leaf.svg") no-repeat 0 40px/80px 80px, url("../img/1.svg") no-repeat 98px 0/112px 280px;
+    }
+  }
+
+  &--powder {
+    background: url("../img/powder.svg") no-repeat 0 0/60px 60px, none;
+
+    @media (min-width: @tablet) {
+      background: url("../img/powder.svg") no-repeat 0 40px/80px 80px, url("../img/2.svg") no-repeat 118px 10px/112px 280px;
+    }
+  }
+
+  &--neal {
+    background: url("../img/weight.svg") no-repeat 0 0/60px 60px, none;
+
+    @media (min-width: @tablet) {
+      background: url("../img/weight.svg") no-repeat 0 40px/80px 80px, url("../img/3.svg") no-repeat 123px 10px/112px 280px;
+    }
+  }
+
+  &--weight {
+    background: url("../img/neal.svg") no-repeat 0 0/60px 60px, none;
+
+    @media (min-width: @tablet) {
+      background: url("../img/neal.svg") no-repeat 0 40px/80px 80px, url("../img/4.svg") no-repeat 125px 14px/112px 280px;
+    }
+  }
 }
+

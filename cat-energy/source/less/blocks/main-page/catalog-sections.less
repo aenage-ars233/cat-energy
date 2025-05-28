@@ -160,4 +160,26 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover .catalog-sections__link-aerrow {
+    clip-path: inset(0 0 0 0);
+  }
+
+  &:active {
+    color: fade(@basic_black, 30%);
+  }
+
+  &:active .catalog-sections__link-aerrow :is(line, path){
+    fill: fade(@basic_black, 30%);
+  }
+}
+
+.catalog-sections__link-text {
+  margin-right: 17px;
+}
+
+.catalog-sections__link-aerrow {
+  position: relative;
+  bottom: 3px;
+  clip-path: inset(0 0 0 6px);
 }

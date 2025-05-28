@@ -57,12 +57,19 @@
 }
 
 .social__item {
-  outline: 1px solid green;
 
   &:first-child {
     width: 23px;
     height: 16px;
     margin-right: 36px;
+
+    &:hover path {
+      fill: @basic_green;
+    }
+
+    &:active path {
+      fill: fade(@basic_green, 30%);
+    }
 
     @media (min-width: @tablet) {
       width: 30px;
@@ -76,6 +83,14 @@
     height: 16px;
     margin-right: 33px;
 
+    &:hover path {
+      fill: @basic_green;
+    }
+
+    &:active path {
+      fill: fade(@basic_green, 30%);
+    }
+
     @media (min-width: @tablet) {
       width: 23px;
       height: 23px;
@@ -84,13 +99,42 @@
   }
 
   &:nth-child(3) {
-    width: 22px;
-    height: 22px;
+    width: 11px;
+    height: 18px;
+
+    &:hover path {
+      stroke: @basic_green;
+    }
+
+    &:active path {
+      stroke: fade(@basic_green, 30%);
+    }
 
     @media (min-width: @tablet) {
       width: 28px;
       height: 33px;
     }
+  }
+}
+
+.vk {
+  @media (min-width: @tablet) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.instagram {
+  @media (min-width: @tablet) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.facebook {
+  @media (min-width: @tablet) {
+    width: 17.83px;
+    height: 31.97px;
   }
 }
 
@@ -105,8 +149,17 @@
   font-size: 16px;
   line-height: 16px;
 
+  &:hover {
+    color: @basic_green;
+  }
+
+  &:active {
+    color: fade(@basic_green, 30%);
+  }
+
   @media (min-width: @tablet) {
     margin: 0;
     width: 163px;
   }
 }
+

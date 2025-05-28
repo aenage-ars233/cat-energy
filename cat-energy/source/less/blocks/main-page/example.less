@@ -94,6 +94,7 @@
 }
 
 .example__list {
+  border: 1px solid #cdcdcd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,9 +103,10 @@
   padding: 0;
   text-align: center;
   padding-top: 14px;
+  border-radius: 3px;
 
   &:first-child {
-    margin-right: 10px;
+    margin-right: 42px;
   }
 
   @media (min-width: @tablet) {
@@ -136,7 +138,7 @@
   line-height: 24px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 11px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
   }
@@ -247,5 +249,25 @@
     height: 34px;
     border-radius: 50%;
     background-color: @basic_white;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 fade(@basic_black, 19%);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 fade(@basic_black, 20%);
+      outline: 1px solid @basic_green;
+    }
+
+    &::before {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: @basic_green;
+      border-radius: 50%;
+    }
   }
 }
