@@ -70,6 +70,33 @@
   }
 }
 
+.more__label {
+  display: flex;
+  align-items: center;
+}
+
+.more__visual-checkbox {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 16px;
+
+  @media (min-width: @tablet) {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
+}
+
+.more__label input:checked + .more__visual-checkbox {
+  background: url("../img/form/tip.svg") no-repeat center/18px 14px;
+
+  @media (min-width: @tablet) {
+    background-size: 24px 18px;
+  }
+}
+
 .more__lead {
   color: @basic_black;
   font-family: "Oswald";

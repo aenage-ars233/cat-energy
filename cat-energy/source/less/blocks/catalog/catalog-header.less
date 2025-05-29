@@ -42,11 +42,25 @@
 }
 
 .catalog-header__toggler {
+  position: relative;
   width: 24px;
   height: 15px;
+  background-color: transparent;
+  border: none;
 
   @media (min-width: @tablet) {
     display: none;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 24px;
+    height: 2.5px;
+    background-color: @basic_black;
+    box-shadow: 0 8px 0 0 @basic_black, 0 16px 0 0 @basic_black;
   }
 }
 
@@ -129,5 +143,18 @@
   @media (min-width: @desktop) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.catalog-main__heading {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1220px;
   }
 }
