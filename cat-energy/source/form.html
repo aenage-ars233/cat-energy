@@ -10,7 +10,11 @@
     <header class="page-header">
       <nav class="page-header__nav">
         <a class="page-header__logo logo">
-          <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat Energy">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="202" height="59">
+            <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Cat Energy">
+          </picture>
           <img class="logo__sign" src="img/logo-mobile-2.svg" width="101" height="19" aria-hidden="true">
         </a>
         <button class="page-header__toggler">

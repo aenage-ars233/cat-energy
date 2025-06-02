@@ -73,12 +73,12 @@
 }
 @media (min-width: 768px) {
   .page-header__logo {
-    margin-right: 94px;
+    margin-right: 55px;
   }
 }
 @media (min-width: 1440px) {
   .page-header__logo {
-    margin-right: 540px;
+    margin-right: 520px;
   }
 }
 .logo__image {
@@ -87,6 +87,11 @@
 @media (min-width: 768px) {
   .logo__image {
     margin-right: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .logo__sign {
+    display: none;
   }
 }
 .page-header__toggler {
@@ -115,7 +120,7 @@
   position: fixed;
   top: 60px;
   left: 0;
-  width: 100%;
+  width: 450px;
   display: none;
   margin: 0;
   padding: 0;
@@ -1258,12 +1263,12 @@
 }
 @media (min-width: 768px) {
   .catalog-header__logo {
-    margin-right: 95px;
+    margin-right: 50px;
   }
 }
 @media (min-width: 1440px) {
   .catalog-header__logo {
-    margin-right: 536px;
+    margin-right: 516px;
   }
 }
 .catalog-header__toggler {
