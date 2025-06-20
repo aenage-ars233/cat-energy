@@ -182,16 +182,38 @@
   }
 }
 
+.example__images {
+  @media (min-width: @tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    margin: 0 auto;
+  }
+}
+
 .fat-cat {
   display: block;
   width: 280px;
   height: 232px;
   margin: 0 auto;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+    width: 296px;
+    height: 511px;
+  }
 }
 
 .thin-cat {
   display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+    width: 296px;
+    height: 511px;
+  }
 }
 
 .switcher {

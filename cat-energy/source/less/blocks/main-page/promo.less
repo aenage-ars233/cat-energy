@@ -1,19 +1,28 @@
 .promo {
   position: relative;
   margin: 0 auto;
-  background-image: url('../img/promo-background.png');
+  background-image: url('../img/bg-promo.png');
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 320px 302px;
   color: @basic_white;
   margin-bottom: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-promo@2x.png");
+    background-size: 320px 300px;
+  }
+
   @media (min-width: @tablet) {
     width: 708px;
     padding-left: 87px;
     padding-bottom: 526px;
-    background: url("../img/cat-pro-energy@tablet.png") no-repeat 0 207px/709px 609px;
+    background: url("../img/promo-image-tablet.png") no-repeat 0 207px/709px 609px;
     color: @basic_black;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/promo-image-tablet@2x.png") no-repeat 0 207px/709px 609px;
+    }
   }
 
   @media (min-width: @desktop) {
@@ -23,7 +32,11 @@
     padding-bottom: 185px;
     margin-top: -90px;
     margin-bottom: 82px;
-    background: url("../img/cat-pro-energy@desktop.png") no-repeat 450px 150px/552px 499px;
+    background: url("../img/promo-image-desktop.png") no-repeat 450px 150px/552px 499px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/promo-image-desktop@2x.png") no-repeat 450px 150px/552px 499px;
+    }
 
     &::before {
       position: absolute;
@@ -33,7 +46,11 @@
       content: "";
       width: 720px;
       height: 694px;
-      background: url("../img/promo-background@desktop.png") no-repeat;
+      background: url("../img/bg-promo-desktop.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/bg-promo-desktop@2x.png") no-repeat 0 0/720px 694px;
+      }
     }
 
     &::after {

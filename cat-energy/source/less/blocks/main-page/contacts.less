@@ -9,6 +9,11 @@
   @media (min-width: @desktop) {
     width: 1440px;
     padding: 95px 765px 107px 110px;
+    background: url("../img/map-desktop.jpg") no-repeat 0 0/1440px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-desktop@2x.jpg") no-repeat 0 0/1440px 400px;
+    }
   }
 }
 
@@ -67,6 +72,11 @@
 .contacts__map {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+    height: 400px;
+  }
 
   @media (min-width: @desktop) {
     display: none;

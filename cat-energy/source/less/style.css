@@ -87,6 +87,14 @@
 @media (min-width: 768px) {
   .logo__image {
     margin-right: 12px;
+    width: 174px;
+    height: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo__image {
+    width: 202px;
+    height: 59px;
   }
 }
 @media (min-width: 768px) {
@@ -237,20 +245,31 @@
 .promo {
   position: relative;
   margin: 0 auto;
-  background-image: url('../img/promo-background.png');
+  background-image: url('../img/bg-promo.png');
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 320px 302px;
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../img/bg-promo@2x.png");
+    background-size: 320px 300px;
+  }
+}
 @media (min-width: 768px) {
   .promo {
     width: 708px;
     padding-left: 87px;
     padding-bottom: 526px;
-    background: url("../img/cat-pro-energy@tablet.png") no-repeat 0 207px/709px 609px;
+    background: url("../img/promo-image-tablet.png") no-repeat 0 207px/709px 609px;
     color: #000000;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo-image-tablet@2x.png") no-repeat 0 207px/709px 609px;
   }
 }
 @media (min-width: 1440px) {
@@ -261,7 +280,7 @@
     padding-bottom: 185px;
     margin-top: -90px;
     margin-bottom: 82px;
-    background: url("../img/cat-pro-energy@desktop.png") no-repeat 450px 150px/552px 499px;
+    background: url("../img/promo-image-desktop.png") no-repeat 450px 150px/552px 499px;
   }
   .promo::before {
     position: absolute;
@@ -271,7 +290,7 @@
     content: "";
     width: 720px;
     height: 694px;
-    background: url("../img/promo-background@desktop.png") no-repeat;
+    background: url("../img/bg-promo-desktop.png") no-repeat;
   }
   .promo::after {
     position: absolute;
@@ -282,6 +301,16 @@
     width: 720px;
     height: 694px;
     background-color: rgba(104, 183, 56, 0.85);
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .promo {
+    background: url("../img/promo-image-desktop@2x.png") no-repeat 450px 150px/552px 499px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .promo::before {
+    background: url("../img/bg-promo-desktop@2x.png") no-repeat 0 0/720px 694px;
   }
 }
 .promo__block {
@@ -907,6 +936,15 @@
     margin: 0;
   }
 }
+@media (min-width: 768px) {
+  .example__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    margin: 0 auto;
+  }
+}
 .fat-cat {
   display: block;
   width: 280px;
@@ -914,8 +952,22 @@
   margin: 0 auto;
   margin-bottom: 15px;
 }
+@media (min-width: 768px) {
+  .fat-cat {
+    margin: 0;
+    width: 296px;
+    height: 511px;
+  }
+}
 .thin-cat {
   display: none;
+}
+@media (min-width: 768px) {
+  .thin-cat {
+    display: block;
+    width: 296px;
+    height: 511px;
+  }
 }
 .switcher {
   display: flex;
@@ -1004,6 +1056,12 @@
   .contacts {
     width: 1440px;
     padding: 95px 765px 107px 110px;
+    background: url("../img/map-desktop.jpg") no-repeat 0 0/1440px 400px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .contacts {
+    background: url("../img/map-desktop@2x.jpg") no-repeat 0 0/1440px 400px;
   }
 }
 .contacts__content {
@@ -1063,6 +1121,12 @@
 .contacts__map {
   display: block;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contacts__map {
+    width: 768px;
+    height: 400px;
+  }
 }
 @media (min-width: 1440px) {
   .contacts__map {
