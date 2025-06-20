@@ -1499,7 +1499,7 @@
     margin-bottom: 68px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     gap: 60px;
   }
 }
@@ -1921,17 +1921,40 @@
 .offer {
   width: 280px;
   margin: 0 auto;
-  background-image: url("../img/catalog/offer-background.png");
+  background-image: url("../img/catalog/offer.png");
+  background-repeat: no-repeat;
   background-size: 279px 289px;
+}
+@media (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/catalog/offer@2x.png");
+    background-size: 279px 289px;
+  }
 }
 @media (min-width: 768px) {
   .offer {
     width: 707px;
+    background-image: url("../img/catalog/offer-tablet.png");
+    background-size: 707px 200px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/catalog/offer-tablet@2x.png");
+    background-size: 707px 200px;
   }
 }
 @media (min-width: 1440px) {
   .offer {
     width: 245px;
+    background-image: url("../img/catalog/offer-desktop.png");
+    background-size: 242px 289px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("../img/catalog/offer-desktop@2x.png");
+    background-size: 242px 289px;
   }
 }
 .offer__block {
@@ -1941,11 +1964,32 @@
 @media (min-width: 768px) {
   .offer__block {
     padding: 57px 124px 60px 77px;
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 1440px) {
   .offer__block {
     padding: 55px 43px 42px 40px;
+    flex-direction: column;
+  }
+}
+.offer__gift-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .offer__gift-icon {
+    margin: 0;
+    margin-right: 265px;
+  }
+}
+@media (min-width: 1440px) {
+  .offer__gift-icon {
+    margin-right: 0;
+    margin: 0 auto;
+    margin-bottom: 52px;
   }
 }
 .offer__text {
@@ -1980,7 +2024,12 @@
   .catalog-contacts {
     width: 1440px;
     padding: 95px 765px 107px 110px;
-    background-color: aqua;
+    background: url("../img/map-desktop.jpg") no-repeat 0 0/1440px 400px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .catalog-contacts {
+    background: url("../img/map-desktop@2x.jpg") no-repeat 0 0/1440px 400px;
   }
 }
 .catalog-contacts__content {
@@ -2608,11 +2657,11 @@
   }
 }
 .more__label input:checked + .more__visual-checkbox {
-  background: url("../img/form/tip.svg") no-repeat center / 18px 14px;
+  background: url("../img/form/tick.svg") no-repeat center / 26px 26px;
 }
 @media (min-width: 768px) {
   .more__label input:checked + .more__visual-checkbox {
-    background-size: 24px 18px;
+    background-size: 26px 26px;
   }
 }
 .more__lead {
@@ -2713,7 +2762,12 @@
   .form__contacts {
     width: 1440px;
     padding: 95px 110px 107px 110px;
-    background-color: aqua;
+    background: url("../img/map-desktop.jpg") no-repeat 0 0/1440px 400px;
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .form__contacts {
+    background: url("../img/map-desktop@2x.jpg") no-repeat 0 0/1440px 400px;
   }
 }
 .form-contacts__content {

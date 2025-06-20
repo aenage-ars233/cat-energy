@@ -9,7 +9,11 @@
   @media (min-width: @desktop) {
     width: 1440px;
     padding: 95px 765px 107px 110px;
-    background-color: aqua;
+    background: url("../img/map-desktop.jpg") no-repeat 0 0/1440px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/map-desktop@2x.jpg") no-repeat 0 0/1440px 400px;
+    }
   }
 }
 
