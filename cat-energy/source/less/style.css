@@ -1266,6 +1266,15 @@
     height: 31.97px;
   }
 }
+.social__link {
+  color: #666666;
+}
+.social__link:hover {
+  color: #68b738;
+}
+.social__link:active {
+  color: rgba(104, 183, 56, 0.3);
+}
 .page-footer__developer {
   display: flex;
   align-items: center;
@@ -1670,6 +1679,18 @@
   .show-more {
     width: 245px;
     padding: 51px 39px 41px 39px;
+  }
+}
+.show-more__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+@media (min-width: 768px) {
+  .show-more__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
   }
 }
 .show-more__heading {
